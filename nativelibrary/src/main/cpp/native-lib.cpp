@@ -10,7 +10,7 @@ JNIEXPORT jstring JNICALL Java_com_beviswang_nativelibrary_NativeMethod_stringFr
 }
 
 extern "C"
-JNIEXPORT void JNICALL Java_com_beviswang_nativelibrary_NativeMethod_searchFile(
+JNIEXPORT void JNICALL Java_com_beviswang_nativelibrary_NativeMethod_scanAllDir(
         JNIEnv *env, jobject /* this */, jstring dir_name) {
     jboolean iscopy;
     const char *dir_name_chars = (*env).GetStringUTFChars(dir_name, &iscopy);

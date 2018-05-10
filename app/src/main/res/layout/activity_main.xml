@@ -5,10 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/sample_text"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/mShowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启" />
+
+        <Button
+            android:id="@+id/mCloseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_toEndOf="@id/mShowBtn"
+            android:text="关闭" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
